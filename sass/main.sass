@@ -1,0 +1,297 @@
+@import './_fonts.sass'
+@import './_media.sass'
+     
+*
+     font-family: 'Source Sans Pro', sans-serif
+     box-sizing: border-box
+     margin: 0
+     padding: 0
+     
+
+a
+     text-decoration: none
+body,html
+     overflow-x: hidden !important
+header
+     position: absolute
+     z-index: 5
+     width: 100%
+
+
+.nav
+     width: 100%
+     height: 100%
+     padding: 20px
+     display: flex
+     align-items: center
+     justify-content: space-around
+
+
+     &__menu
+          &-link
+               display: inline
+               a
+                    font-size: 13px 
+                    text-transform: uppercase
+                    color: rgba(255, 255, 255,0.5)
+                    margin: 20px
+               a:hover
+                    
+                    color: rgba(255, 255, 255,1)
+
+
+
+.bcg
+     width: 100%
+     position: absolute
+     z-index: -1
+
+.reg__block
+     a
+          font-size: 13px
+          text-transform: uppercase
+          margin-left: 20px
+          color: rgba(255, 255, 255,1)
+     
+     a:nth-child(2)
+          font-size: 13px
+          color: rgb(35, 14, 142)
+          padding: 10px 35px
+          border-radius: 20px
+          background-color: #fff
+
+
+.preview
+     display: flex
+     width: 100%
+     height: 90vh
+     &__title-block,&__img
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 50%
+          height: 100%
+
+
+.preview__title
+     // margin-bottom: 60pxs
+     *
+          margin: 50px
+     h1
+          color: #ffffff
+          font-size: 45px
+          line-height: 1.5
+
+     p
+          margin-left: 51px
+          line-height: 0
+          color: #ffffff
+          font-weight: lighter
+          font-size: 22px
+     a
+          transition: .4s
+          display: inline-block
+          color: #000
+          font-size: 14px
+          background: rgba(255, 202, 0, 1)
+          padding: 15px 35px
+          border-radius: 30px
+          margin-top: 55px
+          text-transform: uppercase
+     
+     a:hover
+          transform: translateY(-15px)
+
+
+.offers
+     margin-top: 131px
+     display: flex
+     justify-content: center
+     align-items: center
+     flex-direction: column
+
+     &__title
+          h2
+               font-size: 35px
+
+
+     &__content
+          margin-top: 30px
+          display: flex
+
+.card
+     text-align: center
+     margin: 70px
+     width: 280px
+     height: 280px
+     
+     &__info-title
+          margin-top: 7px
+     &__info
+          p
+               line-height: 24px
+               padding-top: 7px
+               color: rgb(170, 170, 170)
+
+
+.offers__svg
+     position: absolute
+     left: 0
+     bottom: -410px
+
+
+.info
+     width: 100%
+     height: 1921px
+     background-color: #F4F9FD
+
+.info__container
+     overflow-y: hidden
+     margin-left: 50px
+     display: flex
+     padding: 91px calc( 300px - 90px )
+     width: 100%
+     height: 616px
+     &-text_block
+          display: flex
+          justify-content: center
+          align-items: start
+          text-align: start
+          flex-direction: column
+          width: 100%
+          height: 100%
+          svg
+               position: relative
+               top: 100px
+               right: 40px
+          h2
+               font-size: 35px
+          p
+               margin-top: 27px
+               line-height: 2
+               font-size: 15px
+               max-width: 416px
+     &-svg
+          margin-top: 150px
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 100%
+
+
+
+.second-block
+     margin-left: 50px
+     order: 4
+     // margin-left: 50px
+     svg
+          transform: scale(2)
+
+.info__container-svg
+     img
+          transform: scale(0.9)
+          position: relative
+          right: 100px
+
+.third-block
+     svg
+          top: 80px
+          position: relative
+          transform: scale(1)
+
+.third-svg
+     img
+          position: relative
+          left: 20px
+.r-sticks
+     position: absolute !important
+     right:0px
+     transform: scale(1)
+     margin-top: 100px
+
+.feedback
+     overflow-x: hidden
+     display: flex
+     align-items: center
+     flex-direction: column
+     width: 100%
+     height: 519px
+     .pre__footer-img
+          position: absolute
+          z-index: -1
+          overflow-x: hidden
+     &__title
+          margin: 50px
+          h1
+               color:#ffff
+               font-size: 40px
+
+     .feedback__container
+          overflow: hidden
+          width: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+
+          &-section
+               overflow: hidden
+               margin-top: 25px
+               display: flex
+
+     .card
+          width: 300px
+          height: 261px
+          background-color: rgba(255,255,255,0.2)
+          border-radius: 5px
+          margin: 20px
+
+
+
+.user__info
+     margin-left: 10px
+     display: flex
+     text-align: left
+     div
+         margin: 20px 10px
+     h3
+          color: #ffffff
+     p
+          color: rgba(255, 255, 255, 0.5)
+
+
+.user__text-info 
+     max-width: 250px
+     margin-top: 15px
+     color: #ffffff
+     margin: 20px
+     font-size: 15px
+
+.pre__footer-img
+     width: 100%
+     height: 550px
+     
+
+.scroll
+     overflow: hidden
+     display: flex
+     justify-content: flex-end
+     width: 100%
+     svg
+          border-radius: 50%
+          margin: 20px
+          width: 90px
+          height: 90px
+          background: white
+          transform: rotate(90deg) scale(0.7)
+          padding: 25px 25px
+          margin-bottom: 50px
+          animation: shake 2s ease-in-out infinite
+
+
+
+@keyframes shake
+     0%,100%
+           transform: rotate(90deg) scale(0.7) translateX(20px)
+     50%
+           transform: rotate(90deg) scale(0.7) translateX(0px)
+          
