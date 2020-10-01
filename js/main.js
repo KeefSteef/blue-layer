@@ -1,5 +1,4 @@
 
-
 gsap.to('.scroll',{
     scrollTrigger:{
         trigger:'.scroll',
